@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAO;
+using DTO;
 
 namespace BUS
 {
@@ -20,5 +21,22 @@ namespace BUS
 				return mk == TaiKhoanDAO.LayMatKhau(tenTK);
 			}
 		}
+        public static bool DangKi(TaiKhoanDTO tk)
+        {
+            if (TaiKhoanDAO.KTTKTonTai(tk.TenDangNhap))
+            {
+                return false;
+            }
+            else
+            {
+                return TaiKhoanDAO.ThemTK(tk);
+            }
+        }
+        public static bool KTMatKhau(string mk1, string mk2)
+        {
+            if (mk1.Equals(mk2))
+                return true;
+            return false;
+        }
 	}
 }

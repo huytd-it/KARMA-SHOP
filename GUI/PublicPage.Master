@@ -80,11 +80,11 @@
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
+								 aria-expanded="false"><i class="ti-user"></i>&nbsp<asp:Label ID="lblUser" runat="server" Text="Trần Đình Huy"></asp:Label></a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/Login.aspx">Login</asp:LinkButton><!--<a class="nav-link" href="login.html">Login</a>--></li>
-									<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/TracKing.aspx">TracKing</asp:LinkButton><!--<a class="nav-link" href="tracking.html">Tracking</a>--></li>
-									<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/Elements.aspx">Elements</asp:LinkButton><!--<a class="nav-link" href="elements.html">Elements</a>--></li>
+									<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/TracKing.aspx">Logout</asp:LinkButton><!--<a class="nav-link" href="tracking.html">Tracking</a>--></li>
+									<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="">Account</asp:LinkButton><!--<a class="nav-link" href="elements.html">Elements</a>--></li>
 								</ul>
 							</li>
 							<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/Contect.aspx">Contact</asp:LinkButton><!--<a class="nav-link" href="contact.html">Contact</a>--></li>

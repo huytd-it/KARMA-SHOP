@@ -1,5 +1,0 @@
-D:\WebBanHang\DTO\bin\Debug\DTO.dll
-D:\WebBanHang\DTO\bin\Debug\DTO.pdb
-D:\WebBanHang\DTO\obj\Debug\DTO.dll
-D:\WebBanHang\DTO\obj\Debug\DTO.pdb
-D:\WebBanHang\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache

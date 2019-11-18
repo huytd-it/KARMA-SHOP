@@ -22,5 +22,40 @@ namespace DTO
             get { return m_matKhau; }
             set { m_matKhau = value; }
         }
+
+        public string Email
+        {
+            get
+            {
+                return m_email;
+            }
+
+            set
+            {
+                m_email = value;
+            }
+        }
+
+        public bool La_admin
+        {
+            get
+            {
+                return la_admin;
+            }
+
+            set
+            {
+                la_admin = value;
+            }
+        }
+        private bool la_admin;
+        private string m_email;
+        public TaiKhoanDTO()
+        {
+            this.m_email = " ";
+            this.m_matKhau = " ";
+            this.m_tenDangNhap = " ";
+            this.la_admin = false;
+        }
     }
 }

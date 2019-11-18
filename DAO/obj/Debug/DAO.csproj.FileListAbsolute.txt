@@ -1,7 +1,0 @@
-D:\WebBanHang\DAO\bin\Debug\DAO.dll
-D:\WebBanHang\DAO\bin\Debug\DAO.pdb
-D:\WebBanHang\DAO\bin\Debug\DTO.dll
-D:\WebBanHang\DAO\bin\Debug\DTO.pdb
-D:\WebBanHang\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
-D:\WebBanHang\DAO\obj\Debug\DAO.dll
-D:\WebBanHang\DAO\obj\Debug\DAO.pdb
