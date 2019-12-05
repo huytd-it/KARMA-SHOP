@@ -8,96 +8,68 @@ namespace DTO
 {
     public class SanPhamDTO
     {
-        private int m_id;
+        private int id;
 
-        public int id
+        public int Id
         {
-            get { return m_id; }
-            set { m_id = value; }
+            get { return id; }
+            set { id = value; }
         }
-        private string m_ten;
+        private string tensanpham;
 
-        public string ten
+        public string Tensanpham
         {
-            get { return m_ten; }
-            set { m_ten = value; }
+            get { return tensanpham; }
+            set { tensanpham = value; }
         }
-        private int m_idLoai;
+        private string anhminhhoa;
 
-        public int idLoai
+        public string Anhminhhoa
         {
-            get { return m_idLoai; }
-            set { m_idLoai = value; }
+            get { return anhminhhoa; }
+            set { anhminhhoa = value; }
         }
-        private int m_giaTien;
+        private int giatien;
 
-        public int giaTien
+        public int Giatien
         {
-            get { return m_giaTien; }
-            set { m_giaTien = value; }
+            get { return giatien; }
+            set { giatien = value; }
         }
-        private string m_anhMinhHoa;
+        private int soluongtonkho;
 
-        public string anhMinhHoa
+        public int Soluongtonkho
         {
-            get { return m_anhMinhHoa; }
-            set { m_anhMinhHoa = value; }
+            get { return soluongtonkho; }
+            set { soluongtonkho = value; }
         }
-        private int m_soLuongTonKho;
+        private bool trangthai;
 
-        public int soLuongTonKho
+        public bool Trangthai
         {
-            get { return m_soLuongTonKho; }
-            set { m_soLuongTonKho = value; }
+            get { return trangthai; }
+            set { trangthai = value; }
         }
-        private string m_ghichu;
+        private string ghichu;
 
-        public string ghichu
+        public string Ghichu
         {
-            get { return m_ghichu; }
-            set { m_ghichu = value; }
+            get { return ghichu; }
+            set { ghichu = value; }
         }
-        private int m_KhoiLuong;
+        private int loaisanpham;
 
-        public int KhoiLuong
+        public int Loaisanpham
         {
-            get { return m_KhoiLuong; }
-            set { m_KhoiLuong = value; }
+            get { return loaisanpham; }
+            set { loaisanpham = value; }
         }
-        private int m_KichCo;
+        private int hangxe;
 
-        public int KichCo
+        public int Hangxe
         {
-            get { return m_KichCo; }
-            set { m_KichCo = value; }
-        }
-        private int m_DungTichXang;
-
-        public int DungTichXang
-        {
-            get { return m_DungTichXang; }
-            set { m_DungTichXang = value; }
-        }
-        private int m_KichCoLopXe;
-
-        public int KichCoLopXe
-        {
-            get { return m_KichCoLopXe; }
-            set { m_KichCoLopXe = value; }
-        }
-        private string m_LoaiDongco;
-
-        public string LoaiDongco
-        {
-            get { return m_LoaiDongco; }
-            set { m_LoaiDongco = value; }
-        }
-        private string m_DuongKinhHanhTrinhPitTong;
-
-        public string DuongKinhHanhTrinhPitTong
-        {
-            get { return m_DuongKinhHanhTrinhPitTong; }
-            set { m_DuongKinhHanhTrinhPitTong = value; }
+            get { return hangxe; }
+            set { hangxe = value; }
         }
     }
 }

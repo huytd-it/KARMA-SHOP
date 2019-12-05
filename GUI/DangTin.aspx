@@ -29,7 +29,7 @@
                         <div class="hover">
                             <h4>Bạn chưa có tài khoản?</h4>
                             <p>Tạo một tài khoản ở đây để đăng tin</p>
-                            <a class="primary-btn" href="registration.html">Đăng kí tài khoản</a>
+                            <asp:HyperLink ID="reg" CssClass="primary-btn" NavigateUrl="~/Register.aspx" runat="server">Đăng kí tài khoản</asp:HyperLink>
                         </div>
                     </div>
                 </div>
