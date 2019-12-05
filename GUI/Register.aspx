@@ -20,6 +20,7 @@
     <!-- End Banner Area -->
     <!--================Login Box Area =================-->
     <section class="login_box_area section_gap">
+        <asp:Panel ID="pnlThongBao" CssClass="alert alert-success" runat="server" Visible="false"></asp:Panel>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -33,25 +34,68 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-6">
+
                     <div class="login_form_inner">
                         <h3>Điền đầy đủ thông tin</h3>
                         <div class="row login_form" id="contactForm">
                             <div class="col-md-12 form-group">
                                 <asp:TextBox CssClass="form-control" ID="txtName" runat="server" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" />
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server"
+                                            ErrorMessage="Vui lòng nhập tên đăng nhập" Style="color:red"  
+                                            ControlToValidate="txtName"> </asp:RequiredFieldValidator>
                             </div>
                             <div class="col-md-12 form-group">
-                                <asp:TextBox CssClass="form-control" ID="txtPass" runat="server" name="pass" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" />
+                                <asp:TextBox CssClass="form-control" ID="txtPass" TextMode="Password"  runat="server" name="pass" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server"
+                                            ErrorMessage="Vui lòng nhập mật khẩu" Style="color:red"  
+                                            ControlToValidate="txtPass"> </asp:RequiredFieldValidator>
                             </div>
                             <div class="col-md-12 form-group">
-                                <asp:TextBox CssClass="form-control" ID="txtRePass" runat="server" placeholder="Repassword" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Repassword'" />
+                                <asp:TextBox CssClass="form-control" ID="txtRePass" TextMode="Password" runat="server" placeholder="Repassword" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Repassword'" />
+                                  <ul>
+                                      <li>
+                                           <asp:CompareValidator ID="CompareValidator2" runat="server"
+                                            ErrorMessage="Mật khẩu không trùng khớp"
+                                            Style="color:red"                                           
+                                            ControlToCompare="txtPass" ControlToValidate="txtRePass"> </asp:CompareValidator>
+                                      </li>
+                                      <li>
+                                           <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server"
+                                            ErrorMessage="Vui lòng nhập xác nhận mật khẩu" Style="color:red"  
+                                            ControlToValidate="txtRePass"> </asp:RequiredFieldValidator>
+                                      </li>
+                                  </ul>
+                                
+                               
                             </div>
                             <div class="col-md-12 form-group">
                                 <asp:TextBox CssClass="form-control" ID="txtEmail" runat="server" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" />
+                                <ul>
+                                    <li>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server"
+                                            ErrorMessage="Vui lòng nhập email" Style="color: red"
+                                            ControlToValidate="txtEmail"> </asp:RequiredFieldValidator>
+                                    </li>
+                                    <li>
+                                        <asp:RegularExpressionValidator ID="string" runat="server"                                             
+                                             ErrorMessage="Email không hợp lệ" Style="color: red"
+                                             ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                                            ControlToValidate="txtEmail">  
+                                        </asp:RegularExpressionValidator>
+                                        
+                                    </li>
+                                </ul>
                             </div>
+                            <!--Compare Validator-->
+                            
                             <div class="col-md-12 form-group">
+                                <!--Đăng kí-->
                                 <asp:Button ID="btnRegister" CssClass="primary-btn" runat="server" Text="Đăng kí" OnClick="btnRegister_Click"></asp:Button>
                             </div>
+                            <!--Validation-->
+                      
                         </div>
                     </div>
                 </div>

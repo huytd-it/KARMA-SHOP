@@ -12,7 +12,11 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Session["username"]!= null)
+            {
+                pnlThongBao.Visible = true;
+                pnlThongBao.GroupingText = "Chào mừng " + Session["username"] + " đến với chúng tôi";
+            }
         }
 
 		protected void btnLogin_Click(object sender, EventArgs e)
@@ -22,11 +26,19 @@ namespace GUI
 			tk.MatKhau = txtPass.Text;
 			if (TaiKhoanBUS.KTDangNhap(tk.TenDangNhap,tk.MatKhau))
 			{
-				Response.Write("<script>alert('Đăng nhập thành công')</script>");
+                Session["username"] = tk.TenDangNhap;
+                Response.Write(tk.TenDangNhap);
+                Response.Redirect("/Login.aspx");
+                
+
+               
 			}
 			else
 			{
-				Response.Write("<script>alert('Đăng nhập thất bại')</script>");
+                pnlThongBao.Visible = true;
+                pnlThongBao.GroupingText = "Đăng nhập thất bại";
+                pnlThongBao.CssClass = "alert alert-danger";
+                
 			}
 		}
 

@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using DTO;
+using System.Data;
+
 namespace DAO
 {
 	public class TaiKhoanDAO
@@ -18,6 +20,15 @@ namespace DAO
 			param[0] = new SqlParameter("@TenTaiKhoan", tenTK);
 			return Convert.ToInt32(DataProvider.ExecuteSelectQuery(query, param).Rows[0][0]) == 1;
 		}
+
+        //Lấy thông tin tài khoản từ database
+        public static TaiKhoanDTO LayThongTinTaiKhoan(string TenDangNhap)
+        {
+            string query = "SELECT * FROM TAIKHOAN WHERE TENDANGNHAP=@tendangnhap";
+            SqlParameter[] param = new SqlParameter[1];
+            param[0] = new SqlParameter("@tendangnhap", TenDangNhap);
+            return ConvertToDTO(DataProvider.ExecuteSelectQuery(query,param).Rows[0]);
+        }
 		public static string LayMatKhau(string tenTK)
 		{
 			string query = "SELECT MatKhau FROM TaiKhoan WHERE TENDANGNHAP = @TenTaiKhoan";
@@ -34,6 +45,17 @@ namespace DAO
             param[2] = new SqlParameter("@email", tk.Email);
             param[3] = new SqlParameter("@la_admin", tk.La_admin);
             return DataProvider.ExecuteInsertQuery(query, param) == 1;
+        }
+        //Chuyển sang kiểu DTO
+        public static TaiKhoanDTO ConvertToDTO(DataRow dr)
+        {
+            TaiKhoanDTO tk = new TaiKhoanDTO();
+            tk.TenDangNhap = dr["TenDangNhap"].ToString();
+            tk.MatKhau = dr["MatKhau"].ToString();
+            tk.Email = dr["Email"].ToString();
+            tk.La_admin = Convert.ToBoolean("LaAdmin");
+            return tk;
+
         }
 	}
 }

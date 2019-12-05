@@ -34,6 +34,11 @@
 	<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
 	<link rel="stylesheet" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/main.css"/>
+    <style>
+        *{
+            font-family:'Space Mono','Source Code Pro';
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -63,36 +68,35 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Shop</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/Shopcategory.aspx">Shop Category</asp:LinkButton></li>
-									<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/Productdetail.aspx">Product Details</asp:LinkButton></li>
-                                    <li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/Productcheckout.aspx">Product Checkout</asp:LinkButton></li>
-									<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/Shoppingcart.aspx">Shopping Cart</asp:LinkButton></li>
-									<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/Confirmation.aspx">Shopping Cart</asp:LinkButton></li>
+									<li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/Shopcategory.aspx">Shop Category</asp:HyperLink></li>
+									<li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/Productdetail.aspx">Product Details</asp:HyperLink></li>
+                                    <li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/Productcheckout.aspx">Product Checkout</asp:HyperLink></li>
+									<li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/Shoppingcart.aspx">Shopping Cart</asp:HyperLink></li>
+									<li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/Confirmation.aspx">Shopping Cart</asp:HyperLink></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+                                <asp:LinkButton runat="server" CssClass="nav-link dropdown-toggle" PostBackUrl="~/DangTin.aspx">Đăng tin bán xe</asp:LinkButton>										
+								<ul class="dropdown-menu">
+									<li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/Blog.aspx">Blog</asp:HyperLink><!--<a class="nav-link" href="blog.html">Blog</a>--></li>
+									<li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/Blogdetails.aspx">Blog Details</asp:HyperLink><!--<a class="nav-link" href="single-blog.html">Blog Details</a>--></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Blog</a>
+								 aria-expanded="false"><asp:Label ID="lblUser" runat="server" Text="Tài Khoản">Tài Khoản</asp:Label></a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/Blog.aspx">Blog</asp:LinkButton><!--<a class="nav-link" href="blog.html">Blog</a>--></li>
-									<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/Blogdetails.aspx">Blog Details</asp:LinkButton><!--<a class="nav-link" href="single-blog.html">Blog Details</a>--></li>
+									<li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link"  NavigateUrl="~/Login.aspx" Text="Đăng nhập" Target="_top"></asp:HyperLink></li>
+                                    <li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/Register.aspx">Đăng kí</asp:HyperLink><!--<a class="nav-link" href="login.html">Login</a>--></li>
+									<li class="nav-item"><asp:LinkButton ID="Logout" runat="server" CssClass="nav-link" OnClick="Logout_Click">Đăng xuất</asp:LinkButton><!--<a class="nav-link" href="tracking.html">Tracking</a>--></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false"><i class="ti-user"></i>&nbsp<asp:Label ID="lblUser" runat="server" Text="Trần Đình Huy"></asp:Label></a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/Login.aspx">Login</asp:LinkButton><!--<a class="nav-link" href="login.html">Login</a>--></li>
-									<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/TracKing.aspx">Logout</asp:LinkButton><!--<a class="nav-link" href="tracking.html">Tracking</a>--></li>
-									<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="">Account</asp:LinkButton><!--<a class="nav-link" href="elements.html">Elements</a>--></li>
-								</ul>
-							</li>
-							<li class="nav-item"><asp:LinkButton runat="server" CssClass="nav-link" PostBackUrl="~/Contect.aspx">Contact</asp:LinkButton><!--<a class="nav-link" href="contact.html">Contact</a>--></li>
+							<li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/Contect.aspx">Contact</asp:HyperLink><!--<a class="nav-link" href="contact.html">Contact</a>--></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item"><asp:LinkButton runat="server" CssClass="cart" PostBackUrl="~/Shoppingcart.aspx"><span class="ti-bag"></span></asp:LinkButton></li>
+							<li class="nav-item"><asp:HyperLink runat="server" CssClass="cart" NavigateUrl="~/Shoppingcart.aspx"><span class="ti-bag"></span></asp:HyperLink></li>
 							<li class="nav-item">
-								<asp:Button ID="btnIconSearch" class="search"><span class="lnr lnr-magnifier" id="search"></span></asp:Button>
+								<asp:Button ID="btnIconSearch" CssClass="search"><span class="lnr lnr-magnifier" id="search"></span></asp:Button>
 							</li>
 						</ul>
 					</div>
@@ -103,8 +107,8 @@
 		<div class="search_input" id="search_input_box">
 			<div class="container">
 				<div class="d-flex justify-content-between">
-					<asp:TextBox   CssClass="form-control" ID="search_input" runat="server" placeholder="Search Here"/>
-                    <asp:Button ID="btnSearch" CssClass="btn" runat="server"></asp:Button>
+					<asp:TextBox   CssClass="form-control" ID="txtTimKiem" runat="server" placeholder="Nhập thông tin vào đây"/>
+                    <asp:Button ID="btnSearch" CssClass="btn-info" runat="server" Text="Tìm kiếm" OnClick="btnSearch_Click"></asp:Button>
 					<span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
 				</div>
 			</div>

@@ -1,0 +1,9 @@
+D:\WebBanHang\BUS\bin\Debug\BUS.dll
+D:\WebBanHang\BUS\bin\Debug\BUS.pdb
+D:\WebBanHang\BUS\bin\Debug\DAO.dll
+D:\WebBanHang\BUS\bin\Debug\DTO.dll
+D:\WebBanHang\BUS\bin\Debug\DAO.pdb
+D:\WebBanHang\BUS\bin\Debug\DTO.pdb
+D:\WebBanHang\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\WebBanHang\BUS\obj\Debug\BUS.dll
+D:\WebBanHang\BUS\obj\Debug\BUS.pdb

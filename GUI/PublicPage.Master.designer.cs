@@ -58,13 +58,22 @@ namespace GUI {
         protected global::System.Web.UI.WebControls.Label lblUser;
         
         /// <summary>
-        /// search_input control.
+        /// Logout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox search_input;
+        protected global::System.Web.UI.WebControls.LinkButton Logout;
+        
+        /// <summary>
+        /// txtTimKiem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTimKiem;
         
         /// <summary>
         /// btnSearch control.

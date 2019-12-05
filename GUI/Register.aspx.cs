@@ -26,19 +26,20 @@ namespace GUI
             tk.MatKhau = txtPass.Text;
             tk.Email = txtEmail.Text;
             string KTMatKhau = txtRePass.Text;
-            if (TaiKhoanBUS.KTMatKhau(tk.MatKhau, KTMatKhau))
+          
+            if (TaiKhoanBUS.DangKi(tk))
             {
-                if (TaiKhoanBUS.DangKi(tk))
-                {
-                    Response.Write("<script>alert('Đăng kí thành công')</script>");
-                }
-                else
-                {
-                    Response.Write("<script>alert('Đăng kí không thành công')</script>");
-                }
+                pnlThongBao.Visible = true;
+                pnlThongBao.GroupingText = "Đăng kí thành công";
             }
             else
-                Response.Write("<script> alert('Mật khẩu không giống nhau vui lòng nhập lại') </script>");
+            {
+                pnlThongBao.Visible = true;
+                pnlThongBao.GroupingText = "Tên đăng nhập đã tồn tại";
+                pnlThongBao.CssClass = "alert alert-danger";
+            }
+            
+           
                 
         }
     }
