@@ -24,3 +24,7 @@ D:\WebBanHang\GUI\bin\DAO.pdb
 D:\WebBanHang\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
 D:\WebBanHang\GUI\obj\Debug\GUI.dll
 D:\WebBanHang\GUI\obj\Debug\GUI.pdb
+C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\GUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\GUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\GUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\GUI\bin\roslyn\VBCSCompiler.exe

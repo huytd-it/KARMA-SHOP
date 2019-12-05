@@ -53,7 +53,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light main_box">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-                    <asp:LinkButton runat="server" CssClass="navbar-brand logo_h" PostBackUrl="~/Index.aspx"><asp:ImageButton runat="server" ImageUrl="~/img/logo.png" /></asp:LinkButton>
+                    <asp:HyperLink runat="server" CssClass="navbar-brand logo_h" NavigateUrl="~/Index.aspx"><asp:ImageButton runat="server" ImageUrl="~/img/logo.png" /></asp:HyperLink>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -63,7 +63,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><asp:LinkButton ID="lbtnHome" runat="server" CssClass="nav-link" PostBackUrl="~/Index.aspx" Text="Home"></asp:LinkButton></li>
+							<li class="nav-item active"><asp:HyperLink ID="hplHome" runat="server" CssClass="nav-link" NavigateUrl="~/Index.aspx" Text="Trang Chủ"></asp:HyperLink></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Shop</a>
