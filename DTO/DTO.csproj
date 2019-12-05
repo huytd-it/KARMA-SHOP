@@ -40,10 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BangTinDTO.cs" />
     <Compile Include="CTHoaDonDTO.cs" />
+    <Compile Include="HangXeDTO.cs" />
     <Compile Include="HoaDonDTO.cs" />
     <Compile Include="KhachHangDTO.cs" />
-    <Compile Include="LoaiSPDTO.cs" />
+    <Compile Include="LoaiXeDTO.cs" />
     <Compile Include="NhanVienDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SanPhamDTO.cs" />
