@@ -17,11 +17,11 @@
         </div>
     </section>
     <section class="login_box_area section_gap">
-       
+
         <div class="container">
-             
+
             <div class="row">
-                
+
                 <div class="col-lg-6">
                     <asp:Panel ID="pnlThongBao" CssClass="alert alert-success" runat="server" Visible="false"></asp:Panel>
                     <div class="login_box_img">
@@ -35,54 +35,73 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="login_form_inner">
-                        <h3>Thông tin xe cần bán</h3>
-                        <div class="row login_form">
+                        <div class="section-title">
+                            <h3><b>Điền đầy đủ thông tin</b></h3>
+                        </div>
+                        <div class="row login_form" style="color:black">
+                            <!--Hãng chế tạo-->
+                            <asp:Label ID="Label2" runat="server" Text="Label">Hãng chế tạo</asp:Label><br />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
+                                 ErrorMessage="*Thông tin bắt buột phải chọn" ControlToValidate="ddlHangCheTao" InitialValue="0" 
+                                 ForeColor="Red"></asp:RequiredFieldValidator>
 
-                            <asp:Label ID="Label2" runat="server" Text="Label">Hãng chế tạo</asp:Label>
-                            <asp:DropDownList ID="ddlHangCheTao" CssClass="col-md-12 form-group" runat="server">                               
+                            <asp:DropDownList ID="ddlHangCheTao" CssClass="col-md-12 form-group"  runat="server" OnSelectedIndexChanged="ddlHangCheTao_SelectedIndexChanged">
                             </asp:DropDownList>
-
-                            <asp:Label ID="Label3" runat="server" Text="Label">Đời xe</asp:Label>
-                            <asp:DropDownList ID="ddlLoaiXe" CssClass="col-md-12 form-group" runat="server">                               
+                            <!--Đời xe -->
+                            <asp:Label ID="Label3" runat="server" Text="Label">Đời xe</asp:Label><br />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" InitialValue="0"
+                                 runat="server" ErrorMessage="*Thông tin bắt buột phải chọn" ControlToValidate="ddlLoaiXe" ForeColor="Red"></asp:RequiredFieldValidator>
+                            
+                            <asp:DropDownList ID="ddlLoaiXe" CssClass="col-md-12 form-group" runat="server">
                             </asp:DropDownList>
-
-                            <asp:Label ID="Label4" runat="server" Text="Label" >Năm sản xuất</asp:Label>
+                            <!--Năm sản xuất -->
+                            <asp:Label ID="Label4" runat="server" Text="Label">Năm sản xuất</asp:Label><br />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" 
+                             ErrorMessage="*Thông tin bắt buột phải chọn" ControlToValidate="ddlNamSX" InitialValue="0"
+                              ForeColor="Red"></asp:RequiredFieldValidator>
                             <asp:DropDownList ID="ddlNamSX" CssClass="col-md-12 form-group" runat="server">
-                                <asp:ListItem Selected="True" Value=" "></asp:ListItem>                                                                           
+                              
                             </asp:DropDownList>
-                           
+                            <!--Xuất xứ -->
 
                             <asp:Label ID="Label5" runat="server" Text="Label">Xuất xứ</asp:Label>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*Thông tin bắt buột phải chọn" ControlToValidate="ddlXuatXu" ForeColor="Red"></asp:RequiredFieldValidator>
                             <asp:DropDownList ID="ddlXuatXu" CssClass="col-md-12 form-group" runat="server">
-                                <asp:ListItem Selected="True">Chọn</asp:ListItem>
+                                <asp:ListItem Selected="True">--Chọn--</asp:ListItem>
                                 <asp:ListItem Value="Nhập khẩu"> Nhập khẩu </asp:ListItem>
                                 <asp:ListItem Value="Lắp ráp trong nước">Lắp ráp trong nước</asp:ListItem>
                             </asp:DropDownList>
+                            <!--Tình trạng-->
+                            <asp:Label ID="Label6" runat="server" Text="Label">Tình trạng</asp:Label><br />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="*Thông tin bắt buột phải chọn" ControlToValidate="ddlTinhTrang" ForeColor="Red"></asp:RequiredFieldValidator>
 
-
-                            <asp:Label ID="Label6" runat="server" Text="Label">Tình trạng</asp:Label>
-
-                            <asp:DropDownList  ID="ddlTinhTrang" CssClass="col-md-12 form-group" runat="server">
-                                <asp:ListItem Selected="True" ></asp:ListItem>
+                            <asp:DropDownList ID="ddlTinhTrang" CssClass="col-md-12 form-group" runat="server">
+                                <asp:ListItem Selected="True">--Chọn--</asp:ListItem>
                                 <asp:ListItem Value="Used"> Xe đã dùng </asp:ListItem>
                                 <asp:ListItem Value="New"> Xe mới </asp:ListItem>
 
                             </asp:DropDownList>
+                              <!--Dòng xe-->
+                            <asp:Label ID="Label1" runat="server" Text="Label">Dòng xe</asp:Label><br />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ErrorMessage="*Thông tin bắt buột phải chọn" ControlToValidate="ddlDongXe" InitialValue="--Chọn--" ForeColor="Red"></asp:RequiredFieldValidator>
 
-                             <div class="col-md-12 form-group">
-                                <asp:Label ID="Label8" runat="server" Text="Số Km đi được"></asp:Label>
-                                <asp:TextBox CssClass="form-control" ID="txtSoKM" runat="server" />
-                            </div>
-                             <asp:Label ID="Label1" runat="server" Text="Label">Dòng xe</asp:Label>
-                            <asp:DropDownList ID="ddlDongXe" CssClass="col-md-12 form-group" runat="server">                                                    
+                            <asp:DropDownList ID="ddlDongXe" CssClass="col-md-12 form-group" runat="server">
                             </asp:DropDownList>
-
-                            <div class="col-md-12 form-group">
-                                <asp:Label ID="Label7" runat="server" Text="Giá tiền"></asp:Label>
-                                <asp:TextBox CssClass="form-control" ID="txtGiaTien" runat="server" />
+                            <!--Số km đi được-->
+                            <div class="form-group col-12">
+                                <asp:Label ID="Label8" runat="server" Text="Số Km đi được"></asp:Label><br />
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ErrorMessage="*Thông tin bắt buột phải nhập" ControlToValidate="txtSoKM" ForeColor="Red"></asp:RequiredFieldValidator>
+                                <asp:TextBox CssClass="form-control" ID="txtSoKM" placeholder="Nhập số km xe đi được" runat="server" />
                             </div>
-                           
 
+
+                            <!--Giá tiền -->
+                            <div class="form-group col-12">
+                                <asp:Label ID="Label7" runat="server" Text="Giá tiền"></asp:Label><br />
+                                <asp:RequiredFieldValidator ForeColor="Red" ID="RequiredFieldValidator14" runat="server" ErrorMessage="*Thông tin bắt buột phải nhập" ControlToValidate="txtGiaTien"></asp:RequiredFieldValidator>
+                                <asp:TextBox CssClass="form-control" ID="txtGiaTien" placeholder="Nhập giá tiền" runat="server" />
+                            </div>
+                            <!--Btn Đăng tin -->
                             <div class="col-md-12 form-group">
                                 <asp:Button ID="btnDangTin" CssClass="primary-btn" runat="server" Text="Đăng tin" OnClick="btnDangTin_Click"></asp:Button>
                             </div>

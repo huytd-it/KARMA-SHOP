@@ -11,8 +11,8 @@ namespace DTO
         private int id;
         private int id_nguoiDang;
         
-        private string hangCheTao;
-        private string doiXe;
+        private int hangCheTao;
+        private int doiXe;
         private int namSanXuat;
         private string xuatXu;
         private string tinhTrang;
@@ -22,8 +22,8 @@ namespace DTO
 
         public BangTinDTO()
         {
-            this.hangCheTao = "";
-            this.doiXe = "";
+            this.HangCheTao = 0;
+            this.DoiXe = 0;
             this.NamSanXuat = 2019;
             this.xuatXu = "";
             this.tinhTrang = " ";
@@ -32,31 +32,9 @@ namespace DTO
             this.dongXe = "";
 
         }
-        public string HangCheTao
-        {
-            get
-            {
-                return hangCheTao;
-            }
+    
 
-            set
-            {
-                hangCheTao = value;
-            }
-        }
-
-        public string DoiXe
-        {
-            get
-            {
-                return doiXe;
-            }
-
-            set
-            {
-                doiXe = value;
-            }
-        }
+   
 
    
         public string XuatXu
@@ -161,6 +139,32 @@ namespace DTO
             set
             {
                 namSanXuat = value;
+            }
+        }
+
+        public int HangCheTao
+        {
+            get
+            {
+                return hangCheTao;
+            }
+
+            set
+            {
+                hangCheTao = value;
+            }
+        }
+
+        public int DoiXe
+        {
+            get
+            {
+                return doiXe;
+            }
+
+            set
+            {
+                doiXe = value;
             }
         }
     }

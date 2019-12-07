@@ -13,7 +13,7 @@ namespace GUI
         {
             if (Session["username"] != null)
             {             
-                lblUser.Text = " " + Session["username"];
+                lblUser.Text = "TK: " + Session["username"];
             }
             else
             {

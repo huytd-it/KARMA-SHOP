@@ -23,5 +23,9 @@ namespace BUS
         {
             return BangTinDAO.ThemBangTin(bangtin);
         }
+        public static KhachHangDTO LayThongTinNguoiDang(string TaiKhoan)
+        {
+            return KhachHangDAO.LayThongTinKhachHang(TaiKhoan);
+        }
     }
 }
