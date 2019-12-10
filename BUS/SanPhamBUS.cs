@@ -23,7 +23,7 @@ namespace BUS
             }
             if (String.Compare(sanpham["tinhTrang"], "0") != 0 || String.IsNullOrEmpty(sanpham["tinhTrang"]))
             {
-                sp.Add("tinhTrang=" + sanpham["tinhTrang"]);
+                sp.Add("trangthai= '" + sanpham["tinhTrang"]+ "'");
             }
             if (sanpham["giaTri"] != "0" || String.IsNullOrEmpty(sanpham["giaTri"]))
             {
@@ -42,8 +42,11 @@ namespace BUS
                 sp.Add("ghichu like N'" + sanpham["hopSo"]+"'");
             }
             string where = "Where " + String.Join(" AND ", sp);
-
+            //Truyền chuổi rỗng khi không có điều kiện
+            if (sp.Count <= 0)
+                where = "";         
             return SanPhamDAO.LayDSSanPham(where);
+
         }
         public static string ConvertToMoney(string money)
         {

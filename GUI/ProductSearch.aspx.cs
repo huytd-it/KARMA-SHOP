@@ -33,7 +33,10 @@ namespace GUI
                 ddlNamSXUpper.AutoPostBack = true;
                 ddlTinhTrang.AutoPostBack = true;
                 ddlGiaTri.AutoPostBack = true;
+                ddlTinhTrang.AutoPostBack = true;
 
+
+                //Load Hãng xe
                 ddlHangXe.DataSource = HangXeBUS.LayDS();
                 ddlHangXe.DataTextField = "TenHang";
                 ddlHangXe.DataValueField = "Id";

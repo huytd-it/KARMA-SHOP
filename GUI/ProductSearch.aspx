@@ -63,16 +63,17 @@
                             </asp:DropDownList>
                         </div>
 					</div>
-                    <div class="common-filter">
-						<div class="head">Trạng Thái</div>
-                        <div class="row login_form price-range-area">                          
-                            <asp:DropDownList ID="ddlTinhTrang" runat="server" CssClass="form-group col-12" OnSelectedIndexChanged="ddlTinhTrang_SelectedIndexChanged">
+                 <div class="common-filter">
+						<div class="head">Tình trạng</div>
+                        <div class="row login_form price-range-area">                           
+                            <asp:DropDownList ID="ddlTinhTrang" runat="server" Height="42px" Width="200px" OnSelectedIndexChanged="ddlTinhTrang_SelectedIndexChanged">
                                 <asp:ListItem Value="0">--Tất cả--</asp:ListItem>
-                                <asp:ListItem Value="true" Text="Xe mới"></asp:ListItem>
-                                <asp:ListItem Value="false" Text="Xe cũ"></asp:ListItem>
+                                <asp:ListItem Value="True">Xe mới</asp:ListItem>
+                                <asp:ListItem Value="False">Xe cũ</asp:ListItem>
                             </asp:DropDownList>
                         </div>
 					</div>
+				
                     <div class="common-filter">
 						<div class="head">Hộp số</div>
                         <div class="row login_form price-range-area">                           

@@ -17,6 +17,7 @@ namespace DAO
             SqlParameter[] para = new SqlParameter[0];
             DataTable dtbXe = DataProvider.ExecuteSelectQuery(query, para);
             List<SanPhamDTO> lstXe = new List<SanPhamDTO>();
+            if(dtbXe != null)
             foreach (DataRow dr in dtbXe.Rows)
             {
                 lstXe.Add(ConvertToDTO(dr));
