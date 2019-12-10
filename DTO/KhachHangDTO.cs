@@ -6,30 +6,39 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class KhachHangDTO
+    public class KhachHangDTO
     {
         private int m_id;
+        private string m_tenKhachHang;
+        private string m_diaChi;
+        private DateTime m_ngaySinh;
+        private string m_email;
+        private string m_SDT;
+        private bool m_trangthai;
+        private string m_ghiChu;
+        private string m_tenTaiKhoan;
+
 
         public int Id
         {
             get { return m_id; }
             set { m_id = value; }
         }
-        private string m_tenKhachHang;
+       
 
         public string TenKhachHang
         {
             get { return m_tenKhachHang; }
             set { m_tenKhachHang = value; }
         }
-        private string m_diaChi;
+        
 
         public string DiaChi
         {
             get { return m_diaChi; }
             set { m_diaChi = value; }
         }
-        private DateTime m_ngaySinh;
+     
 
         public DateTime NgaySinh
         {
@@ -43,14 +52,13 @@ namespace DTO
             get { return m_gioiTinh; }
             set { m_gioiTinh = value; }
         }
-        private string m_email;
-
+       
         public string Email
         {
             get { return m_email; }
             set { m_email = value; }
         }
-        private string m_SDT;
+       
 
         public string SDT
         {
@@ -58,5 +66,43 @@ namespace DTO
             set { m_SDT = value; }
         }
 
+        public bool Trangthai
+        {
+            get
+            {
+                return m_trangthai;
+            }
+
+            set
+            {
+                m_trangthai = value;
+            }
+        }
+
+        public string GhiChu
+        {
+            get
+            {
+                return m_ghiChu;
+            }
+
+            set
+            {
+                m_ghiChu = value;
+            }
+        }
+
+        public string TenTaiKhoan
+        {
+            get
+            {
+                return m_tenTaiKhoan;
+            }
+
+            set
+            {
+                m_tenTaiKhoan = value;
+            }
+        }
     }
 }

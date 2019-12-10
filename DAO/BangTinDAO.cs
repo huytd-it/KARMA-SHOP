@@ -49,9 +49,9 @@ namespace DAO
             bt.Id_nguoiDang = Convert.ToInt32(dr["id_nguoidang"]);
             bt.TinhTrang = dr["tinhtrang"].ToString();
             bt.XuatXu = dr["XuatXu"].ToString();
-            bt.DoiXe = dr["Doixe"].ToString();
+            bt.DoiXe = Convert.ToInt32(dr["Doixe"]);
             bt.DongXe = dr["Dongxe"].ToString();
-            bt.HangCheTao = dr["Hangxe"].ToString();
+            bt.HangCheTao =Convert.ToInt32(dr["Hangxe"]);
             bt.GiaTien = Convert.ToInt32(dr["Giatien"]);
             bt.SoKm = Convert.ToInt32(dr["SoKm"]);
             bt.NamSanXuat = Convert.ToInt32(dr["NamSX"]);

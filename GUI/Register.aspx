@@ -20,25 +20,25 @@
     <!-- End Banner Area -->
     <!--================Login Box Area =================-->
     <section class="login_box_area section_gap">
-        <asp:Panel ID="pnlThongBao" CssClass="alert alert-success" runat="server" Visible="false"></asp:Panel>
+       
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="login_box_img">
                         <img class="img-fluid" src="img/login.jpg" alt="">
                         <div class="hover">
-                            <h4>New to our website?</h4>
-                            <p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-                            <asp:LinkButton runat="server" CssClass="primary-btn" PostBackUrl="~/Login.aspx">Login</asp:LinkButton>
+                            <h4>Đăng nhập để sữ dụng được nhiều chức năng hơn</h4>
+                            <p>Đăng nhập tài khoản tại đây</p>
+                            <asp:HyperLink runat="server" CssClass="primary-btn" NavigateUrl="~/Login.aspx">Đăng nhập</asp:HyperLink>
                             <%--<a class="primary-btn" href="registration.html">Create an Account</a>--%>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6">
-
+                     <asp:Panel ID="pnlThongBao" CssClass="alert alert-success" runat="server" Visible="false"></asp:Panel>
                     <div class="login_form_inner">
-                        <h3>Điền đầy đủ thông tin</h3>
+                        <div class="section-title"><h3><b>Điền đầy đủ thông tin</b></h3></div>
                         <div class="row login_form" id="contactForm">
                             <div class="col-md-12 form-group">
                                 <asp:TextBox CssClass="form-control" ID="txtName" runat="server" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" />

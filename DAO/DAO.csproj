@@ -47,6 +47,7 @@
     <Compile Include="CTSanPhamDAO.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="HangXeDAO.cs" />
+    <Compile Include="KhachHangDAO.cs" />
     <Compile Include="LoaiXeDAO.cs" />
     <Compile Include="SanPhamDAO.cs" />
     <Compile Include="TaiKhoanDAO.cs" />
