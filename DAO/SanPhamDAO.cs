@@ -23,7 +23,21 @@ namespace DAO
             }
             return lstXe;
         }
-
+        
+        public static List<SanPhamDTO> LayDSSanPham(string where)
+        {
+            string query = "select * from Xe " + where;
+            SqlParameter[] para = new SqlParameter[0];
+            DataTable dtbXe = DataProvider.ExecuteSelectQuery(query, para);
+            List<SanPhamDTO> lstXe = new List<SanPhamDTO>();
+            if(dtbXe != null)
+                foreach (DataRow dr in dtbXe.Rows)
+                {
+                    lstXe.Add(ConvertToDTO(dr));
+                }
+            return lstXe;
+        }
+        
         public static SanPhamDTO ConvertToDTO(DataRow dr)
         {
             SanPhamDTO xe = new SanPhamDTO();

@@ -89,6 +89,7 @@
     <Content Include="img\organic-food\.DS_Store" />
     <Content Include="js\.DS_Store" />
     <Content Include="Productdetail.aspx" />
+    <Content Include="ProductSearch.aspx" />
     <Content Include="PublicPage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -350,6 +351,13 @@
     </Compile>
     <Compile Include="Productdetail.aspx.designer.cs">
       <DependentUpon>Productdetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSearch.aspx.cs">
+      <DependentUpon>ProductSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSearch.aspx.designer.cs">
+      <DependentUpon>ProductSearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublicPage.Master.cs">
