@@ -25,9 +25,9 @@
 					<div class="login_box_img">
 						<img class="img-fluid" src="img/login.jpg" alt="">
 						<div class="hover">
-							<h4>New to our website?</h4>
-							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-                            <asp:LinkButton runat="server" CssClass ="primary-btn" PostBackUrl="~/Register.aspx">Create an Account</asp:LinkButton>
+							<h4>Bạn có tài khoản chưa?</h4>
+							<p>Tạo một tài khoản nếu bạn chưa có tại đây</p>
+                            <asp:HyperLink runat="server" CssClass ="primary-btn" NavigateUrl="~/Register.aspx">Đăng kí tài khoản</asp:HyperLink>
 							<%--<a class="primary-btn" href="registration.html">Create an Account</a>--%>
 						</div>
 					</div>
@@ -35,7 +35,7 @@
 				<div class="col-lg-6">
                     <asp:Panel ID="pnlThongBao" CssClass="alert alert-success" runat="server" Visible="false"></asp:Panel>
 					<div class="login_form_inner">
-						<h3>Log in to enter</h3>
+						<div class="section-title"><h3><b>Điền đầy đủ thông tin</b></h3></div>
 						<div class="row login_form"  id="contactForm">
 							<div class="col-md-12 form-group">
                                 <asp:TextBox CssClass="form-control" ID="txtName" runat="server" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" />

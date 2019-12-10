@@ -31,6 +31,7 @@ namespace GUI
             {
                 pnlThongBao.Visible = true;
                 pnlThongBao.GroupingText = "Đăng kí thành công";
+                pnlThongBao.CssClass = "alert alert-success";
             }
             else
             {
