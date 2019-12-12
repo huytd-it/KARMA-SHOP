@@ -18,6 +18,8 @@ namespace GUI
         protected int m_giatri;
         protected int m_namsx;
         protected string m_hopso;
+
+        protected int lenght;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -74,17 +76,28 @@ namespace GUI
 
         protected void rptDSSanPham_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
+            string giatien_covernt;
             if (e.Item.ItemType == ListItemType.AlternatingItem ||e.Item.ItemType == ListItemType.Item)
             {
-                //Label giatien = e.Item.FindControl("lblGiaTien") as Label;
-                // string TeklifId = giatien.Text;  //value here
-                //HtmlGenericControl TeklifId = e.Item.FindControl("TeklifId") as HtmlGenericControl;
-                //string TeklifId = TeklifId.InnerText;  //value here
+                RepeaterItem item = e.Item;
+                int giaTien = Convert.ToInt32((item.FindControl("lblGiaSP")as Label).Text);
+                if(giaTien > 999999999)
+                {
+                    giatien_covernt = String.Format("{0:f} Tỷ VNĐ", Convert.ToDouble(giaTien) / 1000000000);
+                }
+                else if( giaTien > 99999999 && giaTien < 999999999)
+                {
+                    giatien_covernt = String.Format("{0:n0} Triệu VNĐ", giaTien / 1000000);
+                }
+                else
+                    giatien_covernt = String.Format("{0:n0} Triệu VNĐ",giaTien/1000000);
+                (e.Item.FindControl("lblGiaSP") as Label).Text = giatien_covernt;            
             }
         }
 
         protected void ddlHangXe_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             rptDSSanPham.DataSource = filter();
             rptDSSanPham.DataBind(); 
             
@@ -135,6 +148,8 @@ namespace GUI
 
 
             };
+            lenght = SanPhamBUS.LocSP(sanpham).Count();
+            pnlThongBao.GroupingText = "Có " + lenght + " sản phẩm được tìm thấy";
             return SanPhamBUS.LocSP(sanpham);
 
 

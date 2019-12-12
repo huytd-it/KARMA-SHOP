@@ -65,25 +65,25 @@
                             <!--Xuất xứ -->
 
                             <asp:Label ID="Label5" runat="server" Text="Label">Xuất xứ</asp:Label>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*Thông tin bắt buột phải chọn" ControlToValidate="ddlXuatXu" ForeColor="Red"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" InitialValue="0" ErrorMessage="*Thông tin bắt buột phải chọn" ControlToValidate="ddlXuatXu" ForeColor="Red"></asp:RequiredFieldValidator>
                             <asp:DropDownList ID="ddlXuatXu" CssClass="col-md-12 form-group" runat="server">
-                                <asp:ListItem Selected="True">--Chọn--</asp:ListItem>
+                                <asp:ListItem Value="0" Selected="True">--Chọn--</asp:ListItem>
                                 <asp:ListItem Value="Nhập khẩu"> Nhập khẩu </asp:ListItem>
                                 <asp:ListItem Value="Lắp ráp trong nước">Lắp ráp trong nước</asp:ListItem>
                             </asp:DropDownList>
                             <!--Tình trạng-->
                             <asp:Label ID="Label6" runat="server" Text="Label">Tình trạng</asp:Label><br />
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="*Thông tin bắt buột phải chọn" ControlToValidate="ddlTinhTrang" ForeColor="Red"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" InitialValue="0" ErrorMessage="*Thông tin bắt buột phải chọn" ControlToValidate="ddlTinhTrang" ForeColor="Red"></asp:RequiredFieldValidator>
 
-                            <asp:DropDownList ID="ddlTinhTrang" CssClass="col-md-12 form-group" runat="server">
-                                <asp:ListItem Selected="True">--Chọn--</asp:ListItem>
+                            <asp:DropDownList ID="ddlTinhTrang"  CssClass="col-md-12 form-group" runat="server">
+                                <asp:ListItem Value="0" Selected="True">--Chọn--</asp:ListItem>
                                 <asp:ListItem Value="Used"> Xe đã dùng </asp:ListItem>
                                 <asp:ListItem Value="New"> Xe mới </asp:ListItem>
 
                             </asp:DropDownList>
                               <!--Dòng xe-->
                             <asp:Label ID="Label1" runat="server" Text="Label">Dòng xe</asp:Label><br />
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ErrorMessage="*Thông tin bắt buột phải chọn" ControlToValidate="ddlDongXe" InitialValue="--Chọn--" ForeColor="Red"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server"  ErrorMessage="*Thông tin bắt buột phải chọn" ControlToValidate="ddlDongXe" InitialValue="--Chọn--" ForeColor="Red"></asp:RequiredFieldValidator>
 
                             <asp:DropDownList ID="ddlDongXe" CssClass="col-md-12 form-group" runat="server">
                             </asp:DropDownList>

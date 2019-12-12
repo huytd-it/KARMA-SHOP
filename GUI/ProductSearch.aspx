@@ -24,7 +24,8 @@
 	</section>
 	<!-- End Banner Area -->
 	<div class="container">
-		<div class="row">            
+		<div class="row">
+            
 			<div class="col-xl-3 col-lg-4 col-md-5">
                 <div class="sidebar-filter mt-50">
 					<div class="top-filter-head">Lọc sản phẩm</div>
@@ -130,8 +131,12 @@
 				<!-- End Filter Bar -->
 				<!-- Start Best Seller -->
 				<section class="lattest-product-area pb-40 category-list">
+                      <h3>
+                          <asp:Panel ID="pnlThongBao" runat="server" CssClass="alert alert-info"></asp:Panel>
+                      </h3>
 					<div class="row">
-						<asp:Repeater ID ="rptDSSanPham" runat ="server" OnItemDataBound="rptDSSanPham_ItemDataBound">
+                      
+                        <asp:Repeater ID="rptDSSanPham" runat="server" OnItemDataBound="rptDSSanPham_ItemDataBound">
                         <ItemTemplate>
                             <div class="col-lg-3 col-md-3">
                                 <asp:Panel ID="pnlSanPhamSingle" runat="server" Height="355" Width="210" CssClass="single-product card ">
@@ -142,8 +147,18 @@
                                         <div class="price">
                                             <h4><asp:Label CssClass="card-text" ID="lblGiaSP" runat="server" Text='<%# Eval("giatien")%>'></asp:Label></h4>
                                         </div>
+                                        <div class="price">
+                                           <asp:Label CssClass="card-text" ID="lblHangXe" runat="server" Text='<%# Eval("hangxe","Hãng xe: {0}")%>'></asp:Label>
+                                        </div>
+                                        <div class="price">
+                                            <asp:Label CssClass="card-text" ID="Label4" runat="server" Text='<%# Eval("ghichu")%>'></asp:Label>
+                                        </div>
+                                         <div class="price">
+                                            <asp:Label CssClass="card-text" ID="Label5" runat="server" Text='<%# Eval("trangthai")%>'></asp:Label>
+                                        </div>
+                                         <hr />
                                         <div class="prd-bottom">
-                                            <asp:LinkButton ID="lbtadtobag" runat="server" CssClass="social-info" PostBackUrl="~/Productdetail.aspx?spID=1" CommandArgument='<%# Eval("id") %>'>
+                                            <asp:LinkButton ID="lbtadtobag" runat="server" CssClass="social-info" PostBackUrl="~/Productdetail.aspx?" CommandArgument='<%# Eval("id") %>'>
                                                 <span class="lnr lnr-move"></span>
                                               
 										        <p class="hover-text">Chi Tiết</p>
