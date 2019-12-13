@@ -176,7 +176,7 @@ namespace GUI
             };
             lenght = SanPhamBUS.LocSP(sanpham).Count();
             if(lenght <= 0)
-                pnlThongBao.GroupingText = "Không sản phẩm được tìm thấy";
+                pnlThongBao.GroupingText = "Có " + lenght + "sản phẩm được tìm thấy";
             else
                 pnlThongBao.GroupingText = "Các sản phẩm được tìm thấy";
             return SanPhamBUS.LocSP(sanpham);
