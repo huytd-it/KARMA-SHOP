@@ -19,7 +19,7 @@ namespace GUI
             if (!IsPostBack)
             {
                 LoadNamSX();
-              
+                pnlThongBao.GroupingText = "Các sản phẩm được tìm thấy";
                 rptDSSanPham.DataSource = SanPhamBUS.DSSanPham();
                 rptDSSanPham.DataBind();
 

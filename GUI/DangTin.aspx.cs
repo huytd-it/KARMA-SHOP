@@ -50,10 +50,10 @@ namespace GUI
         {
             List<ListItem> namsx = new List<ListItem>();
            
-            for (int i = 9; i > 0; i--)
+            for (int i = 19; i > 0; i--)
             {
                 namsx.Add(new ListItem( "200" + i,"200" + i));
-                ddlNamSX.Items.Add(new ListItem("200" + i, "200" + i));
+                ddlNamSX.Items.Add(new ListItem(Convert.ToString(2000+i), Convert.ToString(2000 + i)));
             }
            
             //ddlNamSX.DataSource = namsx;
