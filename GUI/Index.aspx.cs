@@ -20,9 +20,5 @@ namespace GUI
                 
             }
         }
-
-        protected void lbtadtobag_Click(object sender, EventArgs e)
-        {
-        }
     }
 }

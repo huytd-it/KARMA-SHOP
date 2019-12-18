@@ -26,7 +26,7 @@
 								</div>
 							</div>
 						</div>
-						<!-- single-slide -->
+						<!-- single-slide -->       
 						<div class="row single-slide">
 							<div class="col-lg-5">
 								<div class="banner-content">
@@ -77,7 +77,7 @@
                                             <h4><asp:Label CssClass="card-text" ID="lblGiaSP" runat="server" Text='<%# Eval("giatien")%>'></asp:Label></h4>
                                         </div>
                                         <div class="prd-bottom">
-                                            <asp:LinkButton ID="lbtadtobag" runat="server" CssClass="social-info" PostBackUrl="~/Productdetail.aspx?spID=1" CommandArgument='<%# Eval("id") %>' OnClick="lbtadtobag_Click">
+                                            <asp:LinkButton ID="lbtadtobag" runat="server" CssClass="social-info" CommandArgument='<%# Eval("id") %>' PostBackUrl='<%#Eval("id","Productdetail.aspx?id={0}") %>' CommandName="XemChiTiet">
                                                 <span class="lnr lnr-move"></span>
                                               
 										        <p class="hover-text">Chi Tiết</p>

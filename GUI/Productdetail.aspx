@@ -21,7 +21,7 @@
 			<div class="row s_product_inner">
 				<div class="col-lg-5">
 						<div class="single-prd-item">
-                            <asp:Image runat="server" CssClass ="img-fluid" ImageUrl="~/img/product/monkey.png"/>
+                            <asp:Image runat="server" CssClass ="img-fluid" ImageUrl="~/img/product/monkey.png" ID ="img_anh"/>
 						</div>
 				</div>
 				<div class="col-lg-6 offset-lg-1">
@@ -29,10 +29,10 @@
                         <h3><asp:Label ID="lbl_ten" runat="server" Text="Faded SkyBlu"></asp:Label></h3>
 						<h2><asp:Label ID="lbl_gia" runat="server" Text="$149.99"></asp:Label></h2>
 						<ul class="list">
-							<li><a class="active" href="#"><span>Category:</span>  Household</a></li>
-							<li><a href="#"> <span>Availibility:In Stock </span> </a></li>
+							<li><a class="active" href="#"><span>Category:</span></a></li>
+							<li><a class="active" href="#"> <span>Availibility:</span> </a></li>
 						</ul>
-						<asp:Label ID="lbl_ghichu" runat="server" Text="Ghi Chú Bảng Xe"></asp:Label>
+						<asp:Label ID="lbl_ghichu" runat="server" Text=""></asp:Label>
 						<div class="card_area d-flex align-items-center">
                             <asp:LinkButton ID="lbt_yeuthich" runat="server" CssClass="primary-btn" Text="Yêu Thích"></asp:LinkButton>
 						</div>
