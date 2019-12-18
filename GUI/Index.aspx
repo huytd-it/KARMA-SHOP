@@ -53,6 +53,7 @@
 	<!-- End banner Area -->
 	<!-- start product Area -->		
 		<!-- single product slide -->
+<<<<<<< HEAD
 		<div class="single-product-slider">
 			<div class="container">
 				<div class="row justify-content-center">
@@ -78,21 +79,61 @@
                                         </div>
                                         <div class="prd-bottom">
                                             <asp:LinkButton ID="lbtadtobag" runat="server" CssClass="social-info" CommandArgument='<%# Eval("id") %>' PostBackUrl='<%#Eval("id","Productdetail.aspx?id={0}") %>' CommandName="XemChiTiet">
+=======
+    <div class="single-product-slider">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="section-title">
+                        <h1><b>XE CÓ TRONG CỬA HÀNG</b></h1>
+                        <p>"CỬA HÀNG XE KARMA HÂN HẠNH PHỤC VỤ QUÝ KHÁCH HÀNG"</p>
+                    </div>
+                </div>
+            </div>
+            <!--Repeater-->
+            <div class="row">
+                <asp:Repeater ID="rptDSSanPham" runat="server" OnItemDataBound="rptDSSanPham_ItemDataBound">
+                    <ItemTemplate>
+                        <div class="col-lg-3 col-md-3">
+                            <asp:Panel ID="pnlSanPhamSingle" runat="server" Height="355" Width="210" CssClass="single-product card ">
+                                <asp:Image CssClass="img-fluid card-img-top" Width="180" Height="110" ImageUrl='<%#"/img/product/" + Eval("anhminhhoa") %>' runat="server" />
+                                <div class="product-details card-body">
+                                    <asp:Label CssClass="card-text" ID="lblTenSP" runat="server" Text='<%#Eval("tensanpham")%>'></asp:Label>
+                                    <hr />
+                                    <div class="price">
+                                        <h4>
+                                            <asp:Label CssClass="card-text" ID="lblGiaSP" runat="server" Text='<%# Eval("giatien")%>'></asp:Label></h4>
+                                    </div>
+                                    <div class="price">
+                                        <asp:Label CssClass="card-text" ID="lblHangXe" runat="server" Text='<%# Eval("hangxe")%>'></asp:Label>
+                                    </div>
+                                    <div class="price">
+                                        <asp:Label CssClass="card-text" ID="Label4" runat="server" Text='<%# Eval("ghichu")%>'></asp:Label>
+                                    </div>
+                                    <div class="price">
+                                        <asp:Label CssClass="card-text" ID="lblTrangThai" runat="server" Text='<%# Eval("trangthai")%>'></asp:Label>
+                                    </div>
+                                    <hr />
+                                    <div class="prd-bottom">
+                                        <asp:LinkButton ID="lbtadtobag" runat="server" CssClass="social-info" PostBackUrl='<%# Eval("id","~/Productdetail.aspx?id={0}") %>' CommandArgument='<%# Eval("id") %>'>
+>>>>>>> 6d8e92b641204ba156aeea7be9829d023ba15e18
                                                 <span class="lnr lnr-move"></span>
                                               
 										        <p class="hover-text">Chi Tiết</p>
-                                            </asp:LinkButton>
-									        <a  class="social-info">
-										        <span class="lnr lnr-heart"></span>
-										        <p class="hover-text">Yêu Thích</p>
-									        </a>
-								       </div>
+                                        </asp:LinkButton>
+                                        <a class="social-info">
+                                            <span class="lnr lnr-heart"></span>
+                                            <p class="hover-text">Yêu Thích</p>
+                                        </a>
+                                    </div>
                                 </div>
-                              </div>
-                            </div>
-                        </ItemTemplate>
-                    </asp:Repeater>
-                 </div>
-             </div>
-          </div>
+                            </asp:Panel>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+
+            </div>
+        </div>
+
+    </div>
 </asp:Content>
