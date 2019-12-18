@@ -69,7 +69,6 @@
 								>Sản phẩm</asp:HyperLink>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/Shopcategory.aspx">Shop Category</asp:HyperLink></li>
-									<li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/Productdetail.aspx">Product Details</asp:HyperLink></li>
                                     <li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/Productcheckout.aspx">Product Checkout</asp:HyperLink></li>
 									<li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/Shoppingcart.aspx">Shopping Cart</asp:HyperLink></li>
 									<li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/Confirmation.aspx">Shopping Cart</asp:HyperLink></li>
