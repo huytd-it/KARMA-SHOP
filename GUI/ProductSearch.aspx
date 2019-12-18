@@ -158,7 +158,7 @@
                                         </div>
                                          <hr />
                                         <div class="prd-bottom">
-                                            <asp:LinkButton ID="lbtadtobag" runat="server" CssClass="social-info" PostBackUrl="~/Productdetail.aspx?" CommandArgument='<%# Eval("id") %>'>
+                                            <asp:LinkButton ID="lbtadtobag" runat="server" CssClass="social-info" PostBackUrl='<%#Eval("id","Productdetail.aspx?id={0}")%>' CommandArgument='<%# Eval("id") %>'>
                                                 <span class="lnr lnr-move"></span>
                                               
 										        <p class="hover-text">Chi Tiết</p>
