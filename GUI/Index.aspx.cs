@@ -20,6 +20,8 @@ namespace GUI
                 
             }
         }
+<<<<<<< HEAD
+=======
         protected void rptDSSanPham_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
             RepeaterItem item = e.Item;
@@ -77,5 +79,6 @@ namespace GUI
         protected void lbtadtobag_Click(object sender, EventArgs e)
         {
         }
+>>>>>>> 6d8e92b641204ba156aeea7be9829d023ba15e18
     }
 }

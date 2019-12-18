@@ -11,9 +11,17 @@ namespace BUS
 {
     public class CTSanPhamBUS
     {
-        public static DataRow LayDSCTSanPham(int id_xe)
+        public static CTSanPhamDTO XemChiTiet(int id){
+           if(CTSanPhamDAO.KTCTSanPham(id))
+           {
+               return CTSanPhamDAO.Chitiet(id);
+           }
+           return null;    
+        }
+
+        public static SanPhamDTO LaySP(int id)
         {
-            return CTSanPhamDAO.LayCTSanPham(id_xe);
+            return CTSanPhamDAO.LaySP(id);
         }
     }
 }
