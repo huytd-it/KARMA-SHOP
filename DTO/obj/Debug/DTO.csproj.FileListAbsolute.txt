@@ -3,7 +3,3 @@ D:\WebBanHang\DTO\bin\Debug\DTO.pdb
 D:\WebBanHang\DTO\obj\Debug\DTO.dll
 D:\WebBanHang\DTO\obj\Debug\DTO.pdb
 D:\WebBanHang\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
-C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\DTO\bin\Debug\DTO.dll
-C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\DTO\bin\Debug\DTO.pdb
-C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\DTO\obj\Debug\DTO.dll
-C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\DTO\obj\Debug\DTO.pdb

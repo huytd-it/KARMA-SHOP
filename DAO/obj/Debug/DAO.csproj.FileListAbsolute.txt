@@ -5,10 +5,3 @@ D:\WebBanHang\DAO\bin\Debug\DTO.pdb
 D:\WebBanHang\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
 D:\WebBanHang\DAO\obj\Debug\DAO.dll
 D:\WebBanHang\DAO\obj\Debug\DAO.pdb
-C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\DAO\bin\Debug\DAO.dll
-C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\DAO\bin\Debug\DAO.pdb
-C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\DAO\bin\Debug\DTO.dll
-C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\DAO\bin\Debug\DTO.pdb
-C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
-C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\DAO\obj\Debug\DAO.dll
-C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\DAO\obj\Debug\DAO.pdb
