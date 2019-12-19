@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using DAO;
 using DTO;
 
@@ -13,6 +14,10 @@ namespace BUS
         public static List<SanPhamDTO> DSSanPham()
         {
             return SanPhamDAO.LayDSSanPham();
+        }
+        public static DataTable LayDSSanpham()
+        {
+            return SanPhamDAO.LayDSsanpham();
         }
         public static List<SanPhamDTO> LocSP(Dictionary<string,string> sanpham)
         {

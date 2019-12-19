@@ -7,3 +7,12 @@ D:\WebBanHang\BUS\bin\Debug\DTO.pdb
 D:\WebBanHang\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 D:\WebBanHang\BUS\obj\Debug\BUS.dll
 D:\WebBanHang\BUS\obj\Debug\BUS.pdb
+C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\BUS\bin\Debug\BUS.dll
+C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\BUS\bin\Debug\BUS.pdb
+C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\BUS\bin\Debug\DAO.dll
+C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\BUS\bin\Debug\DTO.dll
+C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\BUS\bin\Debug\DAO.pdb
+C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\BUS\bin\Debug\DTO.pdb
+C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\BUS\obj\Debug\BUS.dll
+C:\Users\yukih\OneDrive\Desktop\asp\Karma_Web_Asp.Net\BUS\obj\Debug\BUS.pdb
