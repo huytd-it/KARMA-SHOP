@@ -66,6 +66,129 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\css\bootstrap-responsive.min.css" />
+    <Content Include="Admin\css\bootstrap-wysihtml5.css" />
+    <Content Include="Admin\css\bootstrap.min.css" />
+    <Content Include="Admin\css\colorpicker.css" />
+    <Content Include="Admin\css\datepicker.css" />
+    <Content Include="Admin\css\font-awesome.css" />
+    <Content Include="Admin\css\fullcalendar.css" />
+    <Content Include="Admin\css\jquery.easy-pie-chart.css" />
+    <Content Include="Admin\css\jquery.gritter.css" />
+    <Content Include="Admin\css\matrix-login.css" />
+    <Content Include="Admin\css\matrix-media.css" />
+    <Content Include="Admin\css\matrix-style.css" />
+    <Content Include="Admin\css\select2.css" />
+    <Content Include="Admin\css\uniform.css" />
+    <Content Include="Admin\Dasboard.aspx" />
+    <Content Include="Admin\font-awesome\css\font-awesome.css" />
+    <Content Include="Admin\font-awesome\fontawesome-webfont.svg" />
+    <Content Include="Admin\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="Admin\img\breadcrumb.png" />
+    <Content Include="Admin\img\demo\av1.jpg" />
+    <Content Include="Admin\img\demo\av2.jpg" />
+    <Content Include="Admin\img\demo\av3.jpg" />
+    <Content Include="Admin\img\demo\av4.jpg" />
+    <Content Include="Admin\img\demo\av5.jpg" />
+    <Content Include="Admin\img\demo\demo-image1.jpg" />
+    <Content Include="Admin\img\demo\demo-image2.jpg" />
+    <Content Include="Admin\img\demo\demo-image3.jpg" />
+    <Content Include="Admin\img\demo\envelope.png" />
+    <Content Include="Admin\img\gallery\imgbox1.jpg" />
+    <Content Include="Admin\img\gallery\imgbox2.jpg" />
+    <Content Include="Admin\img\gallery\imgbox3.jpg" />
+    <Content Include="Admin\img\gallery\imgbox4.jpg" />
+    <Content Include="Admin\img\gallery\imgbox5.jpg" />
+    <Content Include="Admin\img\glyphicons-halflings-white.png" />
+    <Content Include="Admin\img\gritter.png" />
+    <Content Include="Admin\img\hue.png" />
+    <Content Include="Admin\img\icons\16\book.png" />
+    <Content Include="Admin\img\icons\16\cabinet.png" />
+    <Content Include="Admin\img\icons\16\calendar.png" />
+    <Content Include="Admin\img\icons\16\client.png" />
+    <Content Include="Admin\img\icons\16\database.png" />
+    <Content Include="Admin\img\icons\16\download.png" />
+    <Content Include="Admin\img\icons\16\graph.png" />
+    <Content Include="Admin\img\icons\16\home.png" />
+    <Content Include="Admin\img\icons\16\lock.png" />
+    <Content Include="Admin\img\icons\16\mail.png" />
+    <Content Include="Admin\img\icons\16\pdf.png" />
+    <Content Include="Admin\img\icons\16\people.png" />
+    <Content Include="Admin\img\icons\16\piechart.png" />
+    <Content Include="Admin\img\icons\16\search.png" />
+    <Content Include="Admin\img\icons\16\shopping-bag.png" />
+    <Content Include="Admin\img\icons\16\survey.png" />
+    <Content Include="Admin\img\icons\16\tag.png" />
+    <Content Include="Admin\img\icons\16\user.png" />
+    <Content Include="Admin\img\icons\16\wallet.png" />
+    <Content Include="Admin\img\icons\16\web.png" />
+    <Content Include="Admin\img\icons\32\book.png" />
+    <Content Include="Admin\img\icons\32\cabinet.png" />
+    <Content Include="Admin\img\icons\32\calendar.png" />
+    <Content Include="Admin\img\icons\32\client.png" />
+    <Content Include="Admin\img\icons\32\dashboard.png" />
+    <Content Include="Admin\img\icons\32\database.png" />
+    <Content Include="Admin\img\icons\32\download.png" />
+    <Content Include="Admin\img\icons\32\graph.png" />
+    <Content Include="Admin\img\icons\32\home.png" />
+    <Content Include="Admin\img\icons\32\lock.png" />
+    <Content Include="Admin\img\icons\32\mail.png" />
+    <Content Include="Admin\img\icons\32\pdf.png" />
+    <Content Include="Admin\img\icons\32\people.png" />
+    <Content Include="Admin\img\icons\32\piechart.png" />
+    <Content Include="Admin\img\icons\32\search.png" />
+    <Content Include="Admin\img\icons\32\shopping-bag.png" />
+    <Content Include="Admin\img\icons\32\survey.png" />
+    <Content Include="Admin\img\icons\32\tag.png" />
+    <Content Include="Admin\img\icons\32\user.png" />
+    <Content Include="Admin\img\icons\32\wallet.png" />
+    <Content Include="Admin\img\icons\32\web.png" />
+    <Content Include="Admin\img\larrow.png" />
+    <Content Include="Admin\img\line.png" />
+    <Content Include="Admin\img\logo.png" />
+    <Content Include="Admin\img\menu-active.png" />
+    <Content Include="Admin\img\rarrow.png" />
+    <Content Include="Admin\img\saturation.png" />
+    <Content Include="Admin\img\select2.png" />
+    <Content Include="Admin\img\spinner.gif" />
+    <Content Include="Admin\img\sprite.png" />
+    <Content Include="Admin\js\bootstrap-colorpicker.js" />
+    <Content Include="Admin\js\bootstrap-datepicker.js" />
+    <Content Include="Admin\js\bootstrap-wysihtml5.js" />
+    <Content Include="Admin\js\bootstrap.js" />
+    <Content Include="Admin\js\bootstrap.min.js" />
+    <Content Include="Admin\js\excanvas.min.js" />
+    <Content Include="Admin\js\fullcalendar.min.js" />
+    <Content Include="Admin\js\jquery.dataTables.min.js" />
+    <Content Include="Admin\js\jquery.easy-pie-chart.js" />
+    <Content Include="Admin\js\jquery.flot.crosshair.js" />
+    <Content Include="Admin\js\jquery.flot.min.js" />
+    <Content Include="Admin\js\jquery.flot.pie.js" />
+    <Content Include="Admin\js\jquery.flot.pie.min.js" />
+    <Content Include="Admin\js\jquery.flot.resize.min.js" />
+    <Content Include="Admin\js\jquery.flot.stack.js" />
+    <Content Include="Admin\js\jquery.gritter.min.js" />
+    <Content Include="Admin\js\jquery.min.js" />
+    <Content Include="Admin\js\jquery.peity.min.js" />
+    <Content Include="Admin\js\jquery.ui.custom.js" />
+    <Content Include="Admin\js\jquery.uniform.js" />
+    <Content Include="Admin\js\jquery.validate.js" />
+    <Content Include="Admin\js\jquery.wizard.js" />
+    <Content Include="Admin\js\masked.js" />
+    <Content Include="Admin\js\matrix.calendar.js" />
+    <Content Include="Admin\js\matrix.charts.js" />
+    <Content Include="Admin\js\matrix.chat.js" />
+    <Content Include="Admin\js\matrix.dashboard.js" />
+    <Content Include="Admin\js\matrix.form_common.js" />
+    <Content Include="Admin\js\matrix.form_validation.js" />
+    <Content Include="Admin\js\matrix.interface.js" />
+    <Content Include="Admin\js\matrix.js" />
+    <Content Include="Admin\js\matrix.login.js" />
+    <Content Include="Admin\js\matrix.popover.js" />
+    <Content Include="Admin\js\matrix.tables.js" />
+    <Content Include="Admin\js\matrix.wizard.js" />
+    <Content Include="Admin\js\select2.min.js" />
+    <Content Include="Admin\js\wysihtml5-0.3.0.js" />
     <Content Include="DangTin.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="packages.config" />
@@ -91,6 +214,18 @@
     <Content Include="Productdetail.aspx" />
     <Content Include="ProductSearch.aspx" />
     <Content Include="PublicPage.Master" />
+    <Content Include="Admin\font-awesome\fontawesome-webfont.eot" />
+    <Content Include="Admin\font-awesome\fontawesome-webfont.ttf" />
+    <Content Include="Admin\font-awesome\fontawesome-webfont.woff" />
+    <Content Include="Admin\font-awesome\FontAwesome.otf" />
+    <Content Include="Admin\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="Admin\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="Admin\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="Admin\font-awesome\font\FontAwesome.otf" />
+    <Content Include="Admin\img\demo\Thumbs.db" />
+    <Content Include="Admin\img\icons\32\Thumbs.db" />
+    <Content Include="Admin\img\Thumbs.db" />
+    <Content Include="Admin\Publicpage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -325,6 +460,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Dasboard.aspx.cs">
+      <DependentUpon>Dasboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dasboard.aspx.designer.cs">
+      <DependentUpon>Dasboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Publicpage.Master.cs">
+      <DependentUpon>Publicpage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Publicpage.Master.designer.cs">
+      <DependentUpon>Publicpage.Master</DependentUpon>
+    </Compile>
     <Compile Include="DangTin.aspx.cs">
       <DependentUpon>DangTin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
