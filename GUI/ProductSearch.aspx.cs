@@ -20,29 +20,63 @@ namespace GUI
             {
                 LoadNamSX();
                 pnlThongBao.GroupingText = "Các sản phẩm được tìm thấy";
-                rptDSSanPham.DataSource = SanPhamBUS.DSSanPham();
-                rptDSSanPham.DataBind();
 
-                ddlHangXe.AutoPostBack = true;
-                ddlHopSo.AutoPostBack = true;
-                ddlNamSXLower.AutoPostBack = true;
-                ddlNamSXUpper.AutoPostBack = true;
-                ddlTinhTrang.AutoPostBack = true;
-                ddlGiaTri.AutoPostBack = true;
-                ddlTinhTrang.AutoPostBack = true;
+                AutoPostBack();
 
 
                 //Load Hãng xe
-                ddlHangXe.DataSource = HangXeBUS.LayDS();
-                ddlHangXe.DataTextField = "TenHang";
-                ddlHangXe.DataValueField = "Id";
-                ddlHangXe.DataBind();
-                ddlHangXe.Items.Insert(0, new ListItem("--Tất cả--", "0"));
+                LoadHangXe();
 
-                
+                phanTrang();
+
             }
-          
+
+
         }
+
+        private void AutoPostBack()
+        {
+            ddlHangXe.AutoPostBack = true;
+            ddlHopSo.AutoPostBack = true;
+            ddlNamSXLower.AutoPostBack = true;
+            ddlNamSXUpper.AutoPostBack = true;
+            ddlTinhTrang.AutoPostBack = true;
+            ddlGiaTri.AutoPostBack = true;
+            ddlTinhTrang.AutoPostBack = true;
+        }
+
+        private void LoadHangXe()
+        {
+            ddlHangXe.DataSource = HangXeBUS.LayDS();
+            ddlHangXe.DataTextField = "TenHang";
+            ddlHangXe.DataValueField = "Id";
+            ddlHangXe.DataBind();
+            ddlHangXe.Items.Insert(0, new ListItem("--Tất cả--", "0"));
+        }
+
+        protected void phanTrang()
+        {
+            PhanTrangBUS phantrang = new PhanTrangBUS();
+
+            if (String.IsNullOrEmpty(Request.QueryString["page"]) == false)
+            {
+                phantrang.current_page = Convert.ToInt32(Request.QueryString["page"]);
+            }
+            phantrang.total_record = SanPhamBUS.DSSanPham().Count();
+            phantrang.limit = 8;
+            phantrang.link_full = "ProductSearch.aspx?page={page}";
+            phantrang.link_first = "ProductSearch.aspx";
+            phantrang.range = 6;
+
+            phantrang.init();
+            pnlPhanTrang.GroupingText = phantrang.showHtml();
+
+            rptDSSanPham.DataSource = SanPhamBUS.DSSanPham(phantrang.limit, phantrang.start);
+            rptDSSanPham.DataBind();
+
+        }
+
+
         protected void LoadNamSX()
         {
             List<ListItem> namsx = new List<ListItem>();
@@ -175,10 +209,10 @@ namespace GUI
 
             };
             lenght = SanPhamBUS.LocSP(sanpham).Count();
-            if(lenght <= 0)
-                pnlThongBao.GroupingText = "Không sản phẩm được tìm thấy";
+            if(lenght > 0)
+                pnlThongBao.GroupingText = "Có " + lenght + " sản phẩm được tìm thấy";
             else
-                pnlThongBao.GroupingText = "Các sản phẩm được tìm thấy";
+                pnlThongBao.GroupingText = "Không có  sản phẩm được tìm thấy";
             return SanPhamBUS.LocSP(sanpham);
 
 

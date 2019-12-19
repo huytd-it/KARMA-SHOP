@@ -118,15 +118,9 @@
                     <div class="sorting mr-auto">
                        
 					</div>
-					<div class="pagination">
-						<a href="#" class="prev-arrow"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
-						<a href="#" class="active">1</a>
-						<a href="#">2</a>
-						<a href="#">3</a>
-						<a href="#" class="dot-dot"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
-						<a href="#">6</a>
-						<a href="#" class="next-arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-					</div>
+					<asp:Panel ID="pnlPhanTrang" runat="server">
+
+					</asp:Panel>
 				</div>
 				<!-- End Filter Bar -->
 				<!-- Start Best Seller -->
@@ -158,7 +152,7 @@
                                         </div>
                                          <hr />
                                         <div class="prd-bottom">
-                                            <asp:LinkButton ID="lbtadtobag" runat="server" CssClass="social-info" PostBackUrl="~/Productdetail.aspx?" CommandArgument='<%# Eval("id") %>'>
+                                            <asp:LinkButton ID="lbtadtobag" runat="server" CssClass="social-info" PostBackUrl='<%#Eval("id","Productdetail.aspx?id={0}")%>' CommandArgument='<%# Eval("id") %>'>
                                                 <span class="lnr lnr-move"></span>
                                               
 										        <p class="hover-text">Chi Tiết</p>

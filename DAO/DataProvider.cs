@@ -11,7 +11,7 @@ namespace DAO
     public class DataProvider
     {
         private static SqlDataAdapter adapter = new SqlDataAdapter();
-        private static SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-LL8QO5R\SQLEXPRESS;Initial Catalog=KARMA;Integrated Security=True");
+        private static SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-3HE5VJ5\SQLEXPRESS;Initial Catalog=KARMA;Integrated Security=True");
 
         public DataProvider()
         {
