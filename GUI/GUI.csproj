@@ -320,6 +320,7 @@
     <Content Include="js\vendor\jquery-2.2.4.min.js" />
     <Content Include="js\vendor\popper.js" />
     <Content Include="Login.aspx" />
+    <Content Include="QuanLyTaiKhoan.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -366,6 +367,13 @@
     </Compile>
     <Compile Include="PublicPage.Master.designer.cs">
       <DependentUpon>PublicPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan.aspx.cs">
+      <DependentUpon>QuanLyTaiKhoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan.aspx.designer.cs">
+      <DependentUpon>QuanLyTaiKhoan.aspx</DependentUpon>
     </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
