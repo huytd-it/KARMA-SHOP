@@ -46,6 +46,7 @@
     <Compile Include="BangTinBUS.cs" />
     <Compile Include="CTSanPhamBUS.cs" />
     <Compile Include="HangXeBUS.cs" />
+    <Compile Include="PhanTrangBUS.cs" />
     <Compile Include="SanPhamBUS.cs" />
     <Compile Include="TaiKhoanBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
