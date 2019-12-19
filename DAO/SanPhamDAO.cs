@@ -28,7 +28,7 @@ namespace DAO
         public static List<SanPhamDTO> LayDSSanPham(string where)
         {
 
-            string query = "select xe.*,hangxe.tenhanhxe from xe,hangxe " + where + " AND hangxe.id = xe.hangxe";
+            string query = "select xe.*,hangxe.tenhanhxe from xe,hangxe " + where;
             SqlParameter[] para = new SqlParameter[0];
             DataTable dtbXe = DataProvider.ExecuteSelectQuery(query, para);
             List<SanPhamDTO> lstXe = new List<SanPhamDTO>();
