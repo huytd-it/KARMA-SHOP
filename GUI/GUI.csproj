@@ -212,6 +212,7 @@
     <Content Include="img\organic-food\.DS_Store" />
     <Content Include="js\.DS_Store" />
     <Content Include="Productdetail.aspx" />
+    <Content Include="ProductLike.aspx" />
     <Content Include="ProductSearch.aspx" />
     <Content Include="PublicPage.Master" />
     <Content Include="Admin\font-awesome\fontawesome-webfont.eot" />
@@ -501,6 +502,13 @@
     </Compile>
     <Compile Include="Productdetail.aspx.designer.cs">
       <DependentUpon>Productdetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductLike.aspx.cs">
+      <DependentUpon>ProductLike.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductLike.aspx.designer.cs">
+      <DependentUpon>ProductLike.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProductSearch.aspx.cs">
       <DependentUpon>ProductSearch.aspx</DependentUpon>

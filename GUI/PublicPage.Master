@@ -94,9 +94,11 @@
 							<li class="nav-item"><asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/ProductSearch.aspx">Tìm kiếm nâng cao</asp:HyperLink><!--<a class="nav-link" href="contact.html">Contact</a>--></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item"><asp:HyperLink runat="server" CssClass="cart" NavigateUrl="~/Shoppingcart.aspx"><span class="ti-bag"></span></asp:HyperLink></li>
+							<li class="nav-item"><asp:HyperLink runat="server" CssClass="cart" NavigateUrl="~/ProductLike.aspx"><span class="lnr lnr-heart"></span></asp:HyperLink></li>
 							<li class="nav-item">
-								<asp:Button ID="btnIconSearch" CssClass="search"><span class="lnr lnr-magnifier" id="search"></span></asp:Button>
+								<asp:Button ID="btniconSearch"CssClass="search">
+                                    <span class="lnr lnr-magnifier" id="search"></span>
+					            </asp:Button>
 							</li>
 						</ul>
 					</div>
