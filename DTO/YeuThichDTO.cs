@@ -36,6 +36,12 @@ namespace DTO
             get { return Tendangnhap; }
             set { Tendangnhap = value; }
         }
+        private bool Xoa;
 
+        public bool Xoa1
+        {
+            get { return Xoa; }
+            set { Xoa = value; }
+        }
     }
 }

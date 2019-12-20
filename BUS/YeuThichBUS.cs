@@ -14,12 +14,22 @@ namespace BUS
         {
             if (YeuThichDAO.KTTontai(YT))
             {
-                return false;
+                return YeuThichDAO.CapNhat(YT);
             }
             else
             {
                 return YeuThichDAO.Themyeuthich(YT);
             }
+        }
+
+        public static List<SanPhamDTO> DsSanphamYT(string session)
+        {
+            return YeuThichDAO.LayDSYeuthich(session);
+        }
+
+        public static bool Xoa(YeuThichDTO YT)
+        {
+            return YeuThichDAO.Xoa(YT);
         }
     }
 }
