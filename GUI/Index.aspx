@@ -66,7 +66,7 @@
             </div>
             <!--Repeater-->
             <div class="row">
-                <asp:Repeater ID="rptDSSanPham" runat="server" OnItemDataBound="rptDSSanPham_ItemDataBound">
+                <asp:Repeater ID="rptDSSanPham" runat="server" OnItemDataBound="rptDSSanPham_ItemDataBound" OnItemCommand="rptDSSanPham_ItemCommand">
                     <ItemTemplate>
                         <div class="col-lg-3 col-md-3">
                             <asp:Panel ID="pnlSanPhamSingle" runat="server" Height="355" Width="210" CssClass="single-product card ">
@@ -90,14 +90,18 @@
                                     <hr />
                                     <div class="prd-bottom">
                                         <asp:LinkButton ID="lbtadtobag" runat="server" CssClass="social-info" PostBackUrl='<%# Eval("id","~/Productdetail.aspx?id={0}") %>' CommandArgument='<%# Eval("id") %>'>
+
                                                 <span class="lnr lnr-move"></span>
                                               
 										        <p class="hover-text">Chi Tiết</p>
                                         </asp:LinkButton>
-                                        <a class="social-info">
+                                        <asp:LinkButton ID="lblyeuthich" runat="server" CommandName="YeuThich" CssClass="social-info" CommandArgument='<%#Eval("id") %>'>
+
                                             <span class="lnr lnr-heart"></span>
+
                                             <p class="hover-text">Yêu Thích</p>
-                                        </a>
+
+                                        </asp:LinkButton>
                                     </div>
                                 </div>
                             </asp:Panel>

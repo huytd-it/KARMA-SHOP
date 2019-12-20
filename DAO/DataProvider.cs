@@ -15,7 +15,7 @@ namespace DAO
 
         public DataProvider()
         {
-            
+
         }
 
         private static SqlConnection OpenConnection()
@@ -30,7 +30,7 @@ namespace DAO
         public static DataTable ExecuteSelectQuery(string query, SqlParameter[] param)
         {
             SqlCommand cmd = new SqlCommand();
-            DataTable dtbKetQua= new DataTable();
+            DataTable dtbKetQua = new DataTable();
             try
             {
                 cmd.Connection = OpenConnection();
