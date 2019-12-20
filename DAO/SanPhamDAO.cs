@@ -24,11 +24,17 @@ namespace DAO
             }
             return lstXe;
         }
-        
+        public static DataTable LayDSsanpham()
+        {
+            string query = "select xe.*,hangxe.tenhanhxe from xe,hangxe  where soluongtonkho > 0 and xe.trangthai = 1 AND hangxe.id = xe.hangxe";
+            SqlParameter[] para = new SqlParameter[0];
+            DataTable dtbXe = DataProvider.ExecuteSelectQuery(query, para);
+            return dtbXe;
+        }
         public static List<SanPhamDTO> LayDSSanPham(string where)
         {
 
-            string query = "select xe.*,hangxe.tenhanhxe from xe,hangxe " + where + " AND hangxe.id = xe.hangxe";
+            string query = "select xe.*,hangxe.tenhanhxe from xe,hangxe " + where;
             SqlParameter[] para = new SqlParameter[0];
             DataTable dtbXe = DataProvider.ExecuteSelectQuery(query, para);
             List<SanPhamDTO> lstXe = new List<SanPhamDTO>();

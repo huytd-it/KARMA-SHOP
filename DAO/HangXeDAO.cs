@@ -28,7 +28,7 @@ namespace DAO
         {
             HangXeDTO hx = new HangXeDTO();
             hx.Id = Convert.ToInt32(dr["id"]);
-            hx.TenHang = dr["TenHanhXe"].ToString();
+            hx.TenHang = dr["tenhanhxe"].ToString();
             hx.DiaChi = dr["DiaChi"].ToString();
             hx.GhiChu = dr["GhiChu"].ToString();
             hx.TrangThai = Convert.ToBoolean(dr["TrangThai"]);

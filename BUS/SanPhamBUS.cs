@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using DAO;
 using DTO;
 
@@ -13,6 +14,10 @@ namespace BUS
         public static List<SanPhamDTO> DSSanPham()
         {
             return SanPhamDAO.LayDSSanPham();
+        }
+        public static DataTable LayDSSanpham()
+        {
+            return SanPhamDAO.LayDSsanpham();
         }
         public static List<SanPhamDTO> LocSP(Dictionary<string,string> sanpham)
         {
@@ -41,7 +46,7 @@ namespace BUS
             {
                 sp.Add("ghichu like N'" + sanpham["hopSo"]+"'");
             }
-            string where = "Where " + String.Join(" AND ", sp);
+            string where = "Where xe.trangthai = 1 AND hangxe.id = xe.hangxe And " + String.Join(" AND ", sp);
             //Truyền chuổi rỗng khi không có điều kiện
             if (sp.Count <= 0)
                 where = "";         
@@ -71,6 +76,11 @@ namespace BUS
                 default:
                     return ">= 0";
             }
+        }
+
+        public static List<SanPhamDTO> DSSanPham(int limit,int start)
+        {
+            return SanPhamDAO.LayDSSanPham("where soluongtonkho > 0 and xe.trangthai = 1 AND hangxe.id = xe.hangxe order by id offset " + start+" rows fetch next " + limit + " rows only");
         }
     }
 }
