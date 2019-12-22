@@ -15,8 +15,9 @@
 									<h1>Monkey <br/>Collection!</h1>
 									<p>Thiết kế mới lạ Chất cho dân chơi</p>
 									<div class="add-bag d-flex align-items-center">
-										<asp:LinkButton ID="btnAdd" runat="server" PostBackUrl="~/Productdetail.aspx" class="add-btn" ><span class="lnr lnr-cross"></span></asp:LinkButton>
-										<span class="add-text text-uppercase">Add to Bag</span>
+										<asp:LinkButton ID="btnAdd" runat="server" PostBackUrl="~/Productdetail.aspx" CssClass="add-btn" ><span class="lnr lnr-cross"></span></asp:LinkButton>
+										
+    <span class="add-text text-uppercase">Add to Bag</span>
 									</div>
 								</div>
 							</div>
@@ -26,7 +27,7 @@
 								</div>
 							</div>
 						</div>
-						<!-- single-slide -->
+						<!-- single-slide -->       
 						<div class="row single-slide">
 							<div class="col-lg-5">
 								<div class="banner-content">
@@ -53,6 +54,7 @@
 	<!-- End banner Area -->
 	<!-- start product Area -->		
 		<!-- single product slide -->
+
     <div class="single-product-slider">
         <div class="container">
             <div class="row justify-content-center">

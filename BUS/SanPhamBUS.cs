@@ -46,7 +46,7 @@ namespace BUS
             {
                 sp.Add("ghichu like N'" + sanpham["hopSo"]+"'");
             }
-            string where = "Where " + String.Join(" AND ", sp);
+            string where = "Where xe.trangthai = 1 AND hangxe.id = xe.hangxe And " + String.Join(" AND ", sp);
             //Truyền chuổi rỗng khi không có điều kiện
             if (sp.Count <= 0)
                 where = "";         
@@ -76,6 +76,49 @@ namespace BUS
                 default:
                     return ">= 0";
             }
+        }
+
+        public static List<SanPhamDTO> DSSanPham(int limit,int start)
+        {
+            return SanPhamDAO.LayDSSanPham("where soluongtonkho > 0 and xe.trangthai = 1 AND hangxe.id = xe.hangxe order by id offset " + start+" rows fetch next " + limit + " rows only");
+        }
+       //xoa sp
+        public static bool Xoasanpham(int id)
+        {
+            if (SanPhamDAO.KTSanPhamTonTai(id))
+            {
+                return SanPhamDAO.Destroy(id);
+            }
+            else
+                return false;
+        }
+        //khoi phuc san pham
+        public static bool Khoiphucsanpham(int id)
+        {
+            if (SanPhamDAO.KTSanPhamTonTai(id))
+            {
+                return SanPhamDAO.Restore(id);
+            }
+            else return false;
+        }
+        //load danh sach san pham bi xoa
+        public static DataTable LayDSSanphamxoa()
+        {
+            return SanPhamDAO.LayDSSanPhamXoa();
+        }
+       //lay thong tin cua 1 cot
+        public static DataRow Laythongtinsp(int id)
+        {
+            return SanPhamDAO.Laythongtinsp(id);
+        }
+        //cap nhat thong tin san pham
+        public static bool Suathongtinsanpham(int id, string tensp, string anhminhoa, int gia, int soluong, string ghichu, int loaixe)
+        {
+            if (SanPhamDAO.KTSanPhamTonTai(id))
+                return SanPhamDAO.Suathongtinsanpham(id, tensp, anhminhoa, gia, soluong, ghichu, loaixe);
+            else
+                return false;
+        
         }
     }
 }

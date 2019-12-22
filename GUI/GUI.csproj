@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Chitietsp.aspx" />
     <Content Include="Admin\css\bootstrap-responsive.min.css" />
     <Content Include="Admin\css\bootstrap-wysihtml5.css" />
     <Content Include="Admin\css\bootstrap.min.css" />
@@ -80,7 +81,7 @@
     <Content Include="Admin\css\matrix-style.css" />
     <Content Include="Admin\css\select2.css" />
     <Content Include="Admin\css\uniform.css" />
-    <Content Include="Admin\Dasboard.aspx" />
+    <Content Include="Admin\Quanlisanpham.aspx" />
     <Content Include="Admin\font-awesome\css\font-awesome.css" />
     <Content Include="Admin\font-awesome\fontawesome-webfont.svg" />
     <Content Include="Admin\font-awesome\font\fontawesome-webfont.svg" />
@@ -189,6 +190,7 @@
     <Content Include="Admin\js\matrix.wizard.js" />
     <Content Include="Admin\js\select2.min.js" />
     <Content Include="Admin\js\wysihtml5-0.3.0.js" />
+    <Content Include="Admin\Thungrac.aspx" />
     <Content Include="DangTin.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="packages.config" />
@@ -455,16 +457,24 @@
     <Content Include="js\vendor\jquery-2.2.4.min.js" />
     <Content Include="js\vendor\popper.js" />
     <Content Include="Login.aspx" />
+    <Content Include="QuanLyTaiKhoan.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\Dasboard.aspx.cs">
-      <DependentUpon>Dasboard.aspx</DependentUpon>
+    <Compile Include="Admin\Chitietsp.aspx.cs">
+      <DependentUpon>Chitietsp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Dasboard.aspx.designer.cs">
-      <DependentUpon>Dasboard.aspx</DependentUpon>
+    <Compile Include="Admin\Chitietsp.aspx.designer.cs">
+      <DependentUpon>Chitietsp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Quanlisanpham.aspx.cs">
+      <DependentUpon>Quanlisanpham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Quanlisanpham.aspx.designer.cs">
+      <DependentUpon>Quanlisanpham.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Publicpage.Master.cs">
       <DependentUpon>Publicpage.Master</DependentUpon>
@@ -472,6 +482,13 @@
     </Compile>
     <Compile Include="Admin\Publicpage.Master.designer.cs">
       <DependentUpon>Publicpage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Thungrac.aspx.cs">
+      <DependentUpon>Thungrac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Thungrac.aspx.designer.cs">
+      <DependentUpon>Thungrac.aspx</DependentUpon>
     </Compile>
     <Compile Include="DangTin.aspx.cs">
       <DependentUpon>DangTin.aspx</DependentUpon>
@@ -515,6 +532,13 @@
     </Compile>
     <Compile Include="PublicPage.Master.designer.cs">
       <DependentUpon>PublicPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan.aspx.cs">
+      <DependentUpon>QuanLyTaiKhoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan.aspx.designer.cs">
+      <DependentUpon>QuanLyTaiKhoan.aspx</DependentUpon>
     </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>

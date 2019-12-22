@@ -59,9 +59,9 @@
         <div id="sidebar"><asp:Hyperlink runat="server" href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</asp:Hyperlink>
   <ul style="display: block;">
     <li class="active"><asp:HyperLink runat="server" href="index.html"><i class="icon icon-home"></i> <asp:Label runat="server">Dashboard</asp:Label></asp:Hyperlink> </li>
-    <li> <asp:HyperLink runat="server"  href="charts.html"><i class="icon icon-signal"></i> <asp:Label runat="server">Quản lí Sản Phẩm</asp:Label></asp:Hyperlink> </li>
+    <li> <asp:HyperLink runat="server" NavigateUrl="~/Admin/Quanlisanpham.aspx"  ><i class="icon icon-signal"></i> <asp:Label runat="server">Quản lí Sản Phẩm</asp:Label></asp:Hyperlink> </li>
     <li> <asp:HyperLink runat="server"  href="widgets.html"><i class="icon icon-inbox"></i> <asp:Label runat="server">Quản lí Tài Khoản</asp:Label></asp:Hyperlink> </li>
-    <li><asp:HyperLink runat="server"  href="tables.html"><i class="icon icon-th"></i> <asp:Label runat="server">Tables</asp:Label></asp:Hyperlink></li>
+    <li><asp:HyperLink runat="server"  NavigateUrl="~/Admin/Thungrac.aspx" ><i class="icon icon-th"></i> <asp:Label runat="server">Thùng Rác</asp:Label></asp:Hyperlink></li>
     <li><asp:HyperLink runat="server"  href="grid.html"><i class="icon icon-fullscreen"></i> <asp:Label runat="server">Full width</asp:Label></asp:Hyperlink></li>
     <li class="submenu"> <asp:HyperLink runat="server"  href="#"><i class="icon icon-th-list"></i> <asp:Label runat="server">Forms</asp:Label> <asp:Label runat="server" class="label label-important">3</asp:Label></asp:Hyperlink>
       <ul>
