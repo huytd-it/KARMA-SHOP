@@ -28,7 +28,15 @@ namespace GUI
 			{
                 Session["username"] = tk.TenDangNhap;
                 Response.Write(tk.TenDangNhap);
-                Response.Redirect("/Login.aspx");
+                if (TaiKhoanBUS.KTAdmin(tk.TenDangNhap))
+                {
+                    Response.Redirect("/Admin/Dasboard.aspx");
+                }
+                else
+                {
+                    Response.Redirect("/Login.aspx");
+                }
+               
                 
 
                

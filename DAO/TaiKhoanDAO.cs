@@ -20,6 +20,13 @@ namespace DAO
 			param[0] = new SqlParameter("@TenTaiKhoan", tenTK);
 			return Convert.ToInt32(DataProvider.ExecuteSelectQuery(query, param).Rows[0][0]) == 1;
 		}
+        public static bool laAdmin(string tenTK)
+        {
+            string query = "SELECT COUNT(*) FROM TAIKHOAN WHERE TENDANGNHAP = @TenTaiKhoan AND LA_ADMIN=1";
+            SqlParameter[] param = new SqlParameter[1];
+            param[0] = new SqlParameter("@TenTaiKhoan", tenTK);
+            return Convert.ToInt32(DataProvider.ExecuteSelectQuery(query, param).Rows[0][0]) == 1;
+        }
 
         //Lấy thông tin tài khoản từ database
         public static TaiKhoanDTO LayThongTinTaiKhoan(string TenDangNhap)

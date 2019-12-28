@@ -21,6 +21,14 @@ namespace BUS
 				return mk == TaiKhoanDAO.LayMatKhau(tenTK);
 			}
 		}
+        public static bool KTAdmin(string tenTK)
+        {
+            if (!TaiKhoanDAO.laAdmin(tenTK))
+            {
+                return false;
+            }
+            return true;
+        }
         public static bool DangKi(TaiKhoanDTO tk)
         {
             if (TaiKhoanDAO.KTTKTonTai(tk.TenDangNhap))
