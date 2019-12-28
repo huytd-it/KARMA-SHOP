@@ -26,14 +26,15 @@ namespace GUI
 			tk.MatKhau = txtPass.Text;
 			if (TaiKhoanBUS.KTDangNhap(tk.TenDangNhap,tk.MatKhau))
 			{
-                Session["username"] = tk.TenDangNhap;
-                Response.Write(tk.TenDangNhap);
+               
                 if (TaiKhoanBUS.KTAdmin(tk.TenDangNhap))
                 {
                     Response.Redirect("/Admin/Dasboard.aspx");
                 }
                 else
                 {
+                    Session["username"] = tk.TenDangNhap;
+                    Response.Write(tk.TenDangNhap);
                     Response.Redirect("/Login.aspx");
                 }
                

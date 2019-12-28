@@ -7,7 +7,7 @@
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
-					<h1>Login</h1>
+					<h1>Đăng nhập</h1>
 					<nav class="d-flex align-items-center">
 						<asp:HyperLink ID="hplHome" runat="server" NavigateUrl="~/Index.aspx" >Home<span class="lnr lnr-arrow-right"></span></asp:HyperLink>
 						<asp:HyperLink ID="hblRegister" runat="server" Text="Register" NavigateUrl="~/Register.aspx"></asp:HyperLink>
